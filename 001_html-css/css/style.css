@@ -260,3 +260,34 @@ h1 {
   );
 }
 /* Todo:: css-style of 002_various_css_properties.html file start*/
+
+/* Todo:: css-style of 003_css_position.html file start*/
+.blue {
+  width: 200px;
+  height: 300px;
+  background: blue;
+  margin-bottom: 10px;
+}
+
+.green {
+  width: 600px;
+  height: 300px;
+  background: green;
+  position: relative;
+  margin: 0 auto;
+}
+
+.red {
+  width: 150px;
+  height: 150px;
+  background: red;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(
+    -50%,
+    -50%
+  );
+}
+/* Todo:: css-style of 003_css_position.html file end*/
