@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+    <style>
+        div {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div align="center">
+        <form action="#">
+            <h1 align="">HTML Form</h1>
+
+            <!-- Todo: input-type *text -->
+            <div>
+                <input type="text" placeholder="Enter First Name" size="30" readonly>
+
+                &nbsp; &nbsp; <!-- * html entities -->
+
+                <input type="text" placeholder="Enter Last Name" size="30" required>
+            </div>
+
+
+            <!-- Todo: input-type *number -->
+            <div>
+                <input type="number" placeholder="Enter Number" size="65" required>
+            </div>
+
+
+            <!-- Todo: input-type *email -->
+            <div>
+                <input type="email" placeholder="Enter Email" size="65" required>
+            </div>
+
+
+            <!-- Todo: input-type *password -->
+            <div>
+                <input type="password" placeholder="Enter password" size="65">
+            </div>
+
+
+            <!-- Todo: form select & option tag -->
+            <div>
+                <label for="">Birthday</label>
+                <select>
+                    <option value="">Day</option>
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                    <option value="">5</option>
+                    <option value="">6</option>
+                    <option value="">7</option>
+                    <option value="">8</option>
+                    <option value="">9</option>
+                </select>
+
+                <select>
+                    <option value="">Month</option>
+                    <option value="">Jan</option>
+                    <option value="">Feb</option>
+                    <option value="">Mar</option>
+                    <option value="">Apr</option>
+                    <option value="">May</option>
+                    <option value="">Jun</option>
+                    <option value="">Jul</option>
+                    <option value="">Aug</option>
+                    <option value="">Sep</option>
+                    <option value="">Oct</option>
+                    <option value="">Nov</option>
+                    <option value="">Dec</option>
+                </select>
+
+                <select>
+                    <option value="">Year</option>
+                    <option value="">2001</option>
+                    <option value="">2002</option>
+                    <option value="">2003</option>
+                    <option value="">2004</option>
+                    <option value="">2005</option>
+                    <option value="">2006</option>
+                    <option value="">2007</option>
+                    <option value="">2008</option>
+                    <option value="">2009</option>
+                </select>
+            </div>
+
+
+            <!-- Todo: input-type *radio -->
+            <div>
+                <label>Gender</label>
+
+                <input type="radio" name="Gender" id="Female">
+                <label for="Female">Female</label>
+
+                <input type="radio" name="Gender" id="Male">
+                <label for="Male">Male</label>
+            </div>
+
+
+            <!-- Todo: message box / textarea -->
+            <div>
+                <textarea name="" id="" cols="65" rows="10" placeholder="Drop a comment"></textarea>
+            </div>
+
+
+            <!-- Todo: different type of input type -->
+            <div>
+                <input type="date"> <br>
+                <input type="range"> <br>
+                <input type="color">
+            </div>
+
+
+            <!-- Todo: message box / textarea -->
+            <div>
+                <input type="checkbox">
+                <label>Agree all conditions</label> <br>
+            </div>
+
+
+            <!-- Todo: form button -->
+            <div>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset form</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
