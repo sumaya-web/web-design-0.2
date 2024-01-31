@@ -1,0 +1,96 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+/* Todo:: Common css end */
+
+/* Todo:: main menu css start */
+.main_menu {
+  height: 80px;
+  background: #222;
+  padding: 0 120px;
+}
+
+.main_menu h1 {
+  color: #f1f1f1;
+  font-size: 48px;
+  font-family: Verdana, Geneva,
+    Tahoma, sans-serif;
+  line-height: 80px;
+  float: left;
+}
+
+.main_menu > ul {
+  /* ! text-align: center; */
+  padding-left: 30%;
+}
+
+.main_menu ul li {
+  /* ! display: inline-block; */
+  float: left;
+  position: relative;
+}
+
+.main_menu ul li a {
+  color: #f1f1f1;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: fantasy;
+  line-height: 80px;
+  padding: 0 20px;
+  transition: all linear 0.4s;
+  -moz-transition: all linear
+    0.4s;
+  -o-transition: all linear
+    0.4s;
+  -ms-transition: all linear
+    0.4s;
+  -webkit-transition: all
+    linear 0.4s;
+
+  /** <a> tag a margin/padding kaj koranor jonno display inline-block kore nite hoy */
+  display: block;
+}
+
+.main_menu ul li a:hover {
+  color: #333;
+  background: #f1f1f1;
+}
+
+/* Todo:: dropdown css start */
+.main_menu ul li .drop-down {
+  position: absolute;
+  background: #222;
+  left: 0;
+  width: 250px;
+  display: none;
+}
+
+.main_menu
+  ul
+  li
+  .drop-down
+  li {
+  width: 100%;
+}
+
+.main_menu
+  ul
+  li:hover
+  .drop-down {
+  display: block;
+}
