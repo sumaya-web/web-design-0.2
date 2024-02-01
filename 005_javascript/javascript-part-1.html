@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript part 1</title>
+    <style>
+        #one {
+            color: red;
+            font-size: 68px;
+            font-weight: 900;
+            text-align: center;
+        }
+
+        .two {
+            color: green;
+            font-size: 36px;
+            font-weight: 500;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="one"></div>
+    <div class="two"></div>
+    <h1></h1>
+
+
+    <script>
+
+        // Example of document.write()"
+        document.write("Hello World!" + "<br>");
+        document.write(2 > 4);
+
+        document.getElementById('one').innerHTML = "Hello World! using getElementById";
+
+        document.getElementsByClassName('two')[0].innerHTML = "Hi everyone! using getElementByClassName";
+
+        document.getElementsByTagName('h1')[0].innerHTML = "Hello Sumaya! using getElementByTagName";
+
+
+        // Example of window.alert()
+        window.alert('hello world');
+        window.alert(10 + 5);
+
+
+        // Example of console.log
+        console.log('hello sumaya');
+        console.log(100 + 20);
+
+
+        // Example of variable
+        var a = 1000;
+        var b = 20 + 20;
+        document.write("<br><br>" + a + "<br>");
+        document.write(b + "<br><br>");
+
+        var x = 'suma';
+        var y = 50;
+        var p = x + y;
+        document.write(p + "<br>");
+
+        var c = '';
+        var d = 50;
+        var q = c - d;
+        document.write(q + "<br><br>");
+
+
+        // Example of object
+        var car = {
+            name: 'BMW',
+            color: 'red',
+            speed: 180,
+            model: '001-BMW'
+        }
+
+        document.write(car.driver_name + "<br>"); // undefined
+        document.write(car.name + "<br>");
+        document.write(car.color + "<br>");
+        document.write(car.speed + "<br>");
+        document.write(car.model + "<br><br>");
+
+
+        // Example of array
+        var people = ['tushar', 'tisha', 'alvi', 'shishir', 'rhyme', 'suma'];
+        document.write(people + "<br>");
+        document.write(people[0] + "<br>");
+        document.write(people[6] + "<br>");
+        document.write(people[2] + ' ' + people[3]);
+    </script>
+</body>
+
+</html>
