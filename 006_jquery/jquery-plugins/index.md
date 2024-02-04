@@ -16,4 +16,4 @@
 
 ---
 
-Checkout the latest repository of jQuery plugins - [jquery-0.2]("https://github.com/sumaya-web/jquery-0.2")
+Checkout the latest repository of jQuery plugins - [jquery-0.2](https://github.com/sumaya-web/jquery-0.2)
