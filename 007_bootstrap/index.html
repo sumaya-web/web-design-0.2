@@ -1,0 +1,254 @@
+<!-- !Bootstrap 5 quick snippets -->
+<!-- Todo => Bootstrap master template -->
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Todo => Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Todo => Bootstrap CSS v5.3.x -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <!-- place navbar here -->
+    </header>
+    <main>
+
+        <!-- Todo => 1.Accordion default -->
+        <section>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Accordion Item #1 Accordion default
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            This is the first item's accordion body.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Todo => 2.Accordion flush -->
+        <section>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne" aria-expanded="true" aria-controls="flush-collapseOne">
+                            Accordion Item #1 Accordion flush
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            This is the first item's accordion body.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Todo => 3.Alert additional content  -->
+        <section>
+            <div class="alert alert-primary" role="alert">
+                <h4 class="alert-heading">Alert Heading</h4>
+                <p>Alert Content</p>
+                <hr />
+                <p class="mb-0">Alert Description
+                    <span class="d-block">Alert additional content</span>
+                </p>
+            </div>
+        </section>
+
+        <!-- Todo => 4.Alert closable -->
+        <section>
+            <div class="alert alert-primary alert-dismissible fade show" role="alert">
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                <strong>Alert Heading</strong> Alert closable
+            </div>
+
+            <script>
+                var alertList = document.querySelectorAll(".alert");
+                alertList.forEach(function (alert) {
+                    new bootstrap.Alert(alert);
+                });
+            </script>
+        </section>
+
+        <!-- Todo => 5.Alert default -->
+        <section>
+            <div class="alert alert-primary" role="alert">
+                <strong>Alert Heading</strong> Alert default
+            </div>
+        </section>
+
+        <!-- Todo => 6.Alert dismissible -->
+        <section>
+            <div class="alert alert-primary alert-dismissible fade show" role="alert">
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+
+                <strong>Holy guacamole!</strong> Alert dismissible
+            </div>
+        </section>
+
+        <!-- Todo => 7.Alert link -->
+        <div class="alert alert-primary" role="alert">
+            <strong>Alert link! </strong><a href="#" class="alert-link">Click Here</a>
+        </div>
+
+        <!-- Todo => 8.Badge button -->
+        <button class="btn btn-primary">
+            (Badge button) Notifications
+            <span class="badge bg-primary">12</span>
+        </button>
+
+        <!-- Todo => 9.Badge default -->
+        <span class="badge bg-primary">Badge default</span>
+
+        <!-- Todo => 10.Badge heading -->
+        <h1-6> Badge heading<span class="badge bg-danger">New</span></h1-6>
+
+        <!-- Todo => 11.Badge link -->
+        <a href="#" class="badge bg-primary">New!</a>
+
+        <!-- Todo => 12.Badge pill -->
+        <span class="badge rounded-pill text-bg-primary">New!</span>
+
+        <!-- Todo => 13.Badge positioned -->
+        <button class="btn btn-primary position-relative">
+            Inbox
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">
+                99+
+                <span class="visually-hidden">unread messages</span>
+            </span>
+        </button>
+
+        <!-- Todo => 14.Badge positionedgeneric -->
+        <button type="button" class="btn btn-primary position-relative">
+            Profile
+            <span
+                class="position-absolute top-0 start-100 translate-middle p-2 bg-primary border border-light rounded-circle">
+                <span class="visually-hidden">New alerts</span>
+            </span>
+        </button>
+
+        <!-- Todo => 15.Bgroup checkbox -->
+        <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+            <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off" />
+            <label class="btn btn-outline-primary" for="btncheck1">First One</label>
+
+            <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off" />
+            <label class="btn btn-outline-success" for="btncheck2">Second One</label>
+
+            <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off" />
+            <label class="btn btn-outline-danger" for="btncheck3">Third One</label>
+        </div>
+
+        <!-- Todo => 16.Bgroup default -->
+        <div class="btn-group" role="group" aria-label="Button group name">
+            <button type="button" class="btn btn-primary">
+                First One
+            </button>
+            <button type="button" class="btn btn-primary">
+                Second One
+            </button>
+            <button type="button" class="btn btn-primary">
+                Third One
+            </button>
+        </div>
+
+        <!-- Todo => 17.Bgroup dropdown -->
+        <div class="btn-group" role="group" aria-label="">
+            <button type="button" class="btn btn-secondary">First One</button>
+            <button type="button" class="btn btn-secondary">Second One</button>
+            <div class="btn-group" role="group">
+                <button id="dropdownId" type="button" class="btn btn-secondary dropdown-toggle"
+                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownId">
+                    <a class="dropdown-item" href="#">First Dropdown</a>
+                    <a class="dropdown-item" href="#">Second Dropdown</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Todo => 17.Bgroup dropdown vertical -->
+        <div class="btn-group-vertical" role="group" aria-label="">
+            <button type="button" class="btn btn-secondary">First One</button>
+            <button type="button" class="btn btn-secondary">Second One</button>
+            <div class="btn-group" role="group">
+                <button id="dropdownId" type="button" class="btn btn-secondary dropdown-toggle"
+                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownId">
+                    <a class="dropdown-item" href="#">First Dropdown</a>
+                    <a class="dropdown-item" href="#">Second Dropdown</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Todo => 18.Bgroup radio -->
+        <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+            <input type="radio" class="btn-check" name="btnradio" id="btncheck1" autocomplete="off" />
+            <label class="btn btn-outline-primary" for="btncheck1">First One</label>
+
+            <input type="radio" class="btn-check" name="btnradio" id="btncheck2" autocomplete="off" />
+            <label class="btn btn-outline-primary" for="btncheck2">Second One</label>
+
+            <input type="radio" class="btn-check" name="btnradio" id="btncheck3" autocomplete="off" />
+            <label class="btn btn-outline-primary" for="btncheck3">Third One</label>
+        </div>
+
+        <!-- Todo => 19.Bgroup size -->
+        <div class="btn-group" role="group" aria-label="">
+            Add buttons here
+        </div>
+
+        <!-- Todo => 19.Bgroup toolbar -->
+        <div class="btn-toolbar" role="toolbar" aria-label="Toolbar">
+            <div class="btn-group" role="group" aria-label="Button Group">
+                <button type="button" class="btn btn-primary">
+                    Button
+                </button>
+                <button type="button" class="btn btn-primary">
+                    Button
+                </button>
+                <button type="button" class="btn btn-primary">
+                    Button
+                </button>
+            </div>
+            <div class="btn-group ms-3" role="group" aria-label="">
+                <button type="button" class="btn btn-primary">
+                    Button
+                </button>
+                <button type="button" class="btn btn-primary">
+                    Button
+                </button>
+            </div>
+        </div>
+
+
+
+
+    </main>
+    <footer>
+        <!-- place footer here -->
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
